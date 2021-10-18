@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// IMPORT ROUTER
+import {BrowserRouter as Router} from "react-router-dom";
 
+// WRAP OUR APP INSIDE OF THE ROUTER TO ENABLE USING ROUTER
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
