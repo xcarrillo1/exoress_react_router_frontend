@@ -1,5 +1,9 @@
 function Home(props) {
-    return <h1>Home</h1>
+    return (
+        <div className="home">
+        <h1>Welcome!</h1>
+        </div>
+    )
 };
 
 export default Home;
