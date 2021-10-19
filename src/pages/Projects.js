@@ -23,6 +23,7 @@ function Projects(props) {
             <div>
                 <h1>{project.name}</h1>
                 <img src={project.image} />
+                <div className="project">
                 <a href={project.git}>
                     <br/>
                     <button>GitHub</button>
@@ -30,6 +31,7 @@ function Projects(props) {
                 <a href={project.live}>
                     <button>Live Site</button>
                 </a>
+                </div>
             </div>
         ));
     };
