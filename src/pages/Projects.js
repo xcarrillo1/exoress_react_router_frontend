@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-function Projects(props) {
+export default function Projects(props) {
     // CREATE STATE TO HOLD PROJECTS
     const [projects, setProjects] = useState(null);
 
@@ -22,20 +22,18 @@ function Projects(props) {
         return projects.map((project) => (
             <div>
                 <h1>{project.name}</h1>
-                <img src={project.image} />
+                <img src={project.image} alt={project.image} />
                 <div className="project">
-                <a href={project.git}>
+                <a href={project.git} target="_blank" rel="noreferrer">
                     <br/>
                     <button>GitHub</button>
                 </a>
-                <a href={project.live}>
+                <a href={project.live} target="_blank" rel="noreferrer">
                     <button>Live Site</button>
                 </a>
                 </div>
             </div>
         ));
     };
-    return projects ? loaded(): <h1>Loading...</h1>
+    return projects ? loaded(): <h1>Please wait a moment...</h1>
 };
-
-export default Projects;

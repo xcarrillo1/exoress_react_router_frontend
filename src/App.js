@@ -1,8 +1,7 @@
 import './App.css';
-import "./styles.css"
 // IMPORT COMPONENTS
 import Footer from "./components/Footer.js";
-import Header from "./components/Header.js";
+import NavBar from "./components/NavBar.js";
 import {Route, Routes} from "react-router-dom";
 // IMPORT PAGES
 import About from "./pages/About.js";
@@ -14,7 +13,7 @@ function App() {
   const URL = "https://portfolio-testing123.herokuapp.com/";
   return (
     <div className="App">
-      <Header />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/projects" element={<Projects URL={URL} />}/>

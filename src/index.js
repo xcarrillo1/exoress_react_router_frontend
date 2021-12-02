@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // IMPORT ROUTER
@@ -11,7 +10,7 @@ ReactDOM.render(
   <Router>
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
+    </React.StrictMode>
   </Router>,
   document.getElementById('root')
 );

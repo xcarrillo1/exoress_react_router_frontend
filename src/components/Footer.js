@@ -1,9 +1,7 @@
-function Footer(props) {
+export default function Footer(props) {
     return (
         <div className="footer">
-            <h1>© XC</h1>
+            <h4>Footer</h4>
         </div>
     )
 }
-
-export default Footer;

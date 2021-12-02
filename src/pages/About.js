@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-function About(props) {
+export default function About(props) {
     // CREATE STATE TO HOLD ABOUT DATA
     const [about, setAbout] = useState(null);
     // CREATE FUNCTION TO MAKE AN API CALL
@@ -24,7 +24,5 @@ function About(props) {
     );
 
     // IF THE DATA ARRIVES RETURN THE RESULT OF LOADED, IF NOT, AN H1 THAT SAYS LOADING
-    return about ? loaded() : <h1>Loading...</h1>;
+    return about ? loaded() : <h1>Please wait a moment...</h1>
 };
-
-export default About;
