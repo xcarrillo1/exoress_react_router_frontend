@@ -6,7 +6,6 @@
 
 * {
   box-sizing: border-box;
-  background-color: #C5C6C7;
   text-decoration: none;
 }
 
@@ -14,23 +13,34 @@
 .NavBar {
   display: flex;
   justify-content: space-around;
-  border: 3px solid #66fcf1;
-  padding: 8px;
-  width: 90%;
-  margin: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 50px;
+  width: 100%;
   flex-wrap: wrap;
   font-family: "Righteous", sans-serif;
+  font-size: 45px;
 }
 
 .NavBar a:visited {
-  color: black;
+  color: white;
 }
 
-/* Home Page */
-.home {
+
+/* Home/About Page */
+.about {
   color: #45A29E;
   text-align: center;
   font-family: "Righteous", sans-serif;
+}
+
+.about img {
+  border-radius: 50px;
+  max-width: 300px;
+  max-height: 3000px;
 }
 
 /* Contact Me Page */
@@ -43,6 +53,10 @@ p {
 
 
 /* Project Page */
+.container-projects {
+  margin-top: 75px;
+}
+
 
 button {
   margin: 3px;
@@ -55,12 +69,12 @@ button {
 } 
 
 /* Footer */
-.footer {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-
-.footer-right  a {
-  text-align: center;
-  display: inline-block;
+.footer nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  font-family: "Righteous", sans-serif;
 }

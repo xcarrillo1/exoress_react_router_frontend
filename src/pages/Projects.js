@@ -20,7 +20,7 @@ export default function Projects(props) {
     // DEFINE A FUNCTION THAT WILL RETURN THE JSX NEEDED ONCE WE GET THE DATA
     const loaded = () => {
         return projects.map((project) => (
-            <div>
+            <div className="container-projects">
                 <h1>{project.name}</h1>
                 <img src={project.image} alt={project.image} />
                 <div className="project">

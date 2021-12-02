@@ -16,9 +16,9 @@ export default function About(props) {
     useEffect(() => getAboutData(), []);
     // DEFINE A FUNCTION THAT WILL RETURN THE JSX NEEDED ONCE WE GET THE DATA
     const loaded = () => (
-        <div>
+        <div className="about">
             <h2>{about.name}</h2>
-            <h3>{about.email}</h3>
+            <img src="https://i.imgur.com/TlpB6It.jpg?1" alt="ProfilePic" />
             <p>{about.bio}</p>
         </div>
     );

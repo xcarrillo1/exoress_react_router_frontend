@@ -5,14 +5,14 @@ export default function NavBar(props) {
         <header>
             <nav className="NavBar">
                 <Link to="/">
-                    <div>HOME</div>
+                    <div>ABOUT ME</div>
                 </Link>
                 <Link to="/projects">
-                    <div>PORJECTS</div>
+                    <div>MY PROJECTS</div>
                 </Link>
-                <Link to="/about">
-                    <div>ABOUT</div>
-                </Link>
+                <a href="/files/XavierCarrilloResume.pdf" download>
+                    <div>MY RESUME</div>
+                </a>
             </nav>
         </header>
     )
